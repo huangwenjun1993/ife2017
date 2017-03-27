@@ -23,14 +23,16 @@
         <div class="int">
         <label for="email">请输入邮箱地址:</label><input type="email" name="email" placeholder="请按邮箱格式输入">
         </div>
+        <p>这是一个邮箱地址</p>
         <div class="int">
-        <label for="password">请输入密码:</label><input pattern="^[a-zA-Z0-9]{6,15}" type="password" name="password" placeholder="请输入6-16位的英文数字">
-        </div>
+        <label for="password">请输入密码:</label><input pattern="^[a-zA-Z0-9]{6,15}" type="password" name="password" placeholder="请输入6-16位的英文数字"> 
+        </div> <br>
          <label for="password">请重复输入密码:</label><input  pattern="^[a-zA-Z0-9]{6,15}" type="password" name="password" placeholder="请输入6-16位的英文数字"> <br>   
        
-            <label>性别:</label><input type="radio" name="sex" value="男">男 
-                   <input type="radio" name="sex" value="女">女 <br>
-            <label>城市:</label><select name="city">
+            <label for="sex">性别:</label><input type="radio" name="sex" value="男">男
+                 <input type="radio" name="sex" value="女">女<br>
+            <label>城市:</label>
+                    <select name="city">
                         <option>重庆</option>
                         <option>北京</option>
                         <option>上海</option>
@@ -38,14 +40,21 @@
                         <option>南京</option>
                         <option>黑龙江</option>
                    </select> <br>
-            <label>爱好:</label><input type="checkbox" name="运动">运动
+            <div class="hobby">
+            <label id="hobby">爱好:</label>
+                    <input type="checkbox" name="运动">运动
                    <input type="checkbox" name="IT">IT
                    <input type="checkbox" name="风景">风景
                    <input type="checkbox" name="新鲜事">新鲜事
                    <input type="checkbox" name="搞机">搞机 <br>
-            <label>个人描述:</label><textarea rows="2"></textarea><br>
-                    <input id="confirm" type="submit" name="submit" value="确认提交">
+            </div>
+            <div class="int">
+            <label for="textarea">个人描述:</label>
 
+                   <textarea rows="2"></textarea>
+            </div>
+                   <input id="confirm" type="submit" name="submit" value="确认提交">
+        
     </form>
 </aside>
 <main>
@@ -147,7 +156,7 @@
         </ol>
     </section>
 </main>
-
+</div>
 <footer>
     <p>版权所有&#169;</p>
 </footer>
